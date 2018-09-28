@@ -97,6 +97,7 @@ const I18N = {
     symbols: 'Symbols',
     flags: 'Flags',
     custom: 'Custom',
+    things: 'Things'
   },
 }
 
