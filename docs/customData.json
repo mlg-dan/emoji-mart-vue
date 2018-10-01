@@ -1,0 +1,84 @@
+{
+  "compressed": true,
+  "categories":[
+    {
+      "id":"foods",
+      "name":"Food & Drink",
+      "emojis":[
+        "pizza",
+        "ramen"
+      ]
+    },
+    {
+      "id":"flags",
+      "name":"Flags",
+      "emojis":[
+        "flag-fi",
+        "flag-pl"
+      ]
+    },
+    {
+      "id":"thing",
+      "name":"Thing",
+      "custom": true,
+      "emojis":[
+        "flag-fi",
+        "flag-pl"
+      ]
+    }
+  ],
+  "emojis": {
+    "flag-pl":{
+      "a":"Poland Flag",
+      "b":"1F1F5-1F1F1",
+      "k":[
+        4,
+        7
+      ],
+      "custom": true,
+      "imageUrl": "https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7"
+    },
+    "pizza":{
+      "a":"Slice of Pizza",
+      "b":"1F355",
+      "j":[
+        "food",
+        "party"
+      ],
+      "k":[
+        7,
+        23
+      ],
+      "custom": true,
+      "imageUrl": "https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7"
+    },
+    "ramen":{
+      "a":"Steaming Bowl",
+      "b":"1F35C",
+      "j":[
+        "food",
+        "japanese",
+        "noodle",
+        "chopsticks"
+      ],
+      "k":[
+        7,
+        30
+      ],
+      "custom": true,
+      "imageUrl": "https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7"
+    },
+    "flag-fi":{
+      "a":"Finland Flag",
+      "b":"1F1EB-1F1EE",
+      "k":[
+        2,
+        1
+      ],
+      "custom": true,
+      "imageUrl": "https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7"
+    }
+  },
+  "aliases":{
+  }
+}

@@ -14,6 +14,7 @@ var categories = [
   ['Objects', 'objects'],
   ['Symbols', 'symbols'],
   ['Flags', 'flags'],
+  ['Thing', 'thing'],
 ]
 
 var sets = ['apple', 'emojione', 'facebook', 'google', 'messenger', 'twitter']

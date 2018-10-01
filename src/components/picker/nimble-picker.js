@@ -26,6 +26,7 @@ const I18N = {
     symbols: 'Symbols',
     flags: 'Flags',
     custom: 'Custom',
+    thing: "Thing"
   },
 }
 

@@ -6,7 +6,7 @@
   </div>
 
   <div class="row">
-    <template v-for="set in ['native', 'apple', 'google', 'twitter', 'emojione', 'messenger', 'facebook']">
+    <template v-for="set in ['native', 'apple', 'google', 'twitter', 'emojione', 'messenger', 'facebook', 'test']">
       <button :key="set" @click="activeSet = set" :disabled="activeSet == set">{{ set }}</button>
     </template>
   </div>
@@ -14,10 +14,15 @@
   <div class="row">
     <picker
       :set="activeSet"
+      :data="customData"
       :native="native"
-      :custom="custom"
       :emoji="emoji"
       :title="title"
+      :recent="[]"
+      :emojiSize="28"
+      :showPreview="false"
+      :showCategories="true"
+      :showSearch="false"
     />
   </div>
 
@@ -37,35 +42,40 @@
 <script>
 
 import { Picker, Emoji } from '../src'
+import customData from './customData.json'
 
 const CUSTOM_EMOJIS = [
   {
     name: 'Party Parrot',
     short_names: ['parrot'],
     keywords: ['party'],
-    imageUrl: './images/parrot.gif'
+    imageUrl: './images/parrot.gif',
+    custom: true
   },
   {
     name: 'Octocat',
     short_names: ['octocat'],
     keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7'
+    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/octocat.png?v7',
+    custom: true
   },
   {
     name: 'Squirrel',
     short_names: ['shipit', 'squirrel'],
     keywords: ['github'],
-    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/shipit.png?v7'
+    imageUrl: 'https://assets-cdn.github.com/images/icons/emoji/shipit.png?v7',
+    custom: true
   },
 ]
 
 export default {
   data() {
     return {
-      activeSet: 'native',
-      emoji: 'point_up',
+      activeSet: 'test',
+      emoji: 'parrot',
       title: 'Pick your emoji…',
-      custom: CUSTOM_EMOJIS
+      custom: CUSTOM_EMOJIS,
+      customData
     }
   },
   computed: {
