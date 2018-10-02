@@ -23,6 +23,7 @@
       :showPreview="false"
       :showCategories="true"
       :showSearch="false"
+      :packs="{thing:'THing999', otherthing:'otherthing is cooler'}"
     />
   </div>
 

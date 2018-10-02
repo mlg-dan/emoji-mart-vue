@@ -96,8 +96,7 @@ const I18N = {
     objects: 'Objects',
     symbols: 'Symbols',
     flags: 'Flags',
-    custom: 'Custom',
-    thing: 'Thing',
+    custom: 'Custom'
   },
 }
 
@@ -196,10 +195,18 @@ export default {
       })
     },
     mergedI18n() {
-      return deepMerge(I18N, this.i18n)
+      const il8n = deepMerge(I18N, this.i18n)
+      il8n.categories = { ...il8n.categories, ...this.packs }
+      return il8n
     }
   },
   created() {
+    console.log('~~~~~~~~~~~~~~~~~~')
+    console.log('~~~~~~~~~~~~~~~~~~')
+    console.log('~~~~~~~~~~~~~~~~~~')
+    console.log('~~~~~~~~~~~~~~~~~~')
+    console.log(this.packs)
+
     let categories = this.parsedData.categories.map(c => {
       let { id, name, emojis } = c
 

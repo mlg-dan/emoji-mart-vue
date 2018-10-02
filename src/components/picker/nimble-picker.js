@@ -25,9 +25,8 @@ const I18N = {
     objects: 'Objects',
     symbols: 'Symbols',
     flags: 'Flags',
-    custom: 'Custom',
-    thing: "Thing"
-  },
+    custom: 'Custom'
+  }
 }
 
 export default class NimblePicker extends React.PureComponent {

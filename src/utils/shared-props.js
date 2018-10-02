@@ -143,6 +143,12 @@ const PickerProps = {
     default() {
       return {}
     }
+  },
+  packs: {
+    type: Object,
+    default() {
+      return {}
+    }
   }
 }
 

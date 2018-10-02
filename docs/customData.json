@@ -25,6 +25,16 @@
         "flag-fi",
         "flag-pl"
       ]
+    },
+    {
+      "id":"otherthing",
+      "name":"Thing",
+      "custom": true,
+      "emojis":[
+        "flag-fi",
+        "flag-pl",
+        "pizza"
+      ]
     }
   ],
   "emojis": {
